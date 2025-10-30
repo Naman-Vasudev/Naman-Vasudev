@@ -15,5 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-[![View my Holopin Badges](https://img.shields.io/badge/Holopin-Badges-blue?style=for-the-badge&logo=holopin)](https://www.holopin.io/@namanvasudev#badges)
-
+[![Holopin Badges](https://holopin.me/namanvasudev)](https://holopin.io/@namanvasudev)
