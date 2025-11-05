@@ -1,13 +1,6 @@
-# Naman Vasudev — GitHub Profile
+<!-- NAMAN VASUDEV | AUTO-GENERATED PROFILE README -->
 
-Hi — this repo generates the dynamic GitHub profile card and SVGs used in my README.
-
+<h2 align="center">Naman Vasudev</h2>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Naman-Vasudev/Naman-Vasudev/main/light_mode.svg" alt="Naman's profile card" />
+  <img src="light_mode.svg" width="700" alt="GitHub Stats"/>
 </p>
-
-This repo contains:
-- `main.py` — generator script (runs in GitHub Actions)
-- `light_mode.svg` & `dark_mode.svg` — generated cards
-- `ascii-art.txt` — the ASCII art used on the left
-- `.github/workflows/update.yml` — daily updater
