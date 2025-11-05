@@ -1,0 +1,39 @@
+name: Update Profile Cards
+
+on:
+  schedule:
+    - cron: '0 6 * * *'       # daily at 06:00 UTC (adjust if wanted)
+  workflow_dispatch:
+
+jobs:
+  update-cards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install python-dateutil requests lxml
+
+      - name: Run generator
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          USER_NAME: ${{ secrets.USER_NAME }}
+        run: python main.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add light_mode.svg dark_mode.svg || true
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update profile cards (automated)"
+            git push
+          else
+            echo "No changes to commit."
+          fi

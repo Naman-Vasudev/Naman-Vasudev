@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1100" height="420" viewBox="0 0 1100 420" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .mono { font-family: "Courier New", monospace; font-size: 10px; fill: #111827; }
+    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #374151; }
+    .value { font-family: Arial, sans-serif; font-size: 12px; fill: #111827; font-weight: 700; }
+    .accent { fill: #FF007F; font-weight:700; }
+    .small { font-size: 11px; fill: #6B7280; }
+    rect { fill: #ffffff; stroke: #E5E7EB; stroke-width: 1; rx: 10; }
+  </style>
+  <rect x="6" y="6" width="1088" height="408" rx="12"/>
+  <!-- ASCII art area (left) -->
+  <g transform="translate(18,18)">
+    <text id="ascii_art" class="mono" xml:space="preserve" x="0" y="0">
+      <!-- ascii content replaced by script -->
+    </text>
+  </g>
+
+  <!-- Right column text block -->
+  <g transform="translate(520,20)">
+    <text class="label" x="0" y="16">-</text>
+    <text class="label" x="0" y="36">OS:</text>
+    <text id="os_line" class="value" x="140" y="36">Windows 11</text>
+
+    <text class="label" x="0" y="56">IDE:</text>
+    <text id="ide_line" class="value" x="140" y="56">VSCode</text>
+
+    <text class="label" x="0" y="76">Languages.Programming:</text>
+    <text id="prog_langs" class="small" x="200" y="76">Python, C++, TypeScript</text>
+
+    <text class="label" x="0" y="96">Languages.Computer:</text>
+    <text id="comp_langs" class="small" x="200" y="96">HTML, CSS, JavaScript</text>
+
+    <text class="label" x="0" y="116">Languages.Real:</text>
+    <text id="real_langs" class="small" x="200" y="116">English, Hindi, Punjabi</text>
+
+    <text class="label" x="0" y="146">Hobbies.Software:</text>
+    <text id="hobby_software" class="small" x="200" y="146">Software, Mathematics, AI</text>
+
+    <text class="label" x="0" y="166">Hobbies.Hardware:</text>
+    <text id="hobby_hardware" class="small" x="200" y="166">Astronomy</text>
+
+    <text class="label" x="0" y="196">Contact:</text>
+    <text class="label" x="0" y="216">Email.Personal:</text>
+    <text id="email_personal" class="small" x="140" y="216">naman24vasudev@gmail.com</text>
+    <text class="label" x="0" y="236">LinkedIn:</text>
+    <text id="linkedin" class="small" x="140" y="236">https://linkedin.com/...</text>
+    <text class="label" x="0" y="256">Instagram:</text>
+    <text id="instagram" class="small" x="140" y="256">naman_s_land</text>
+
+    <text class="label" x="0" y="286">- GitHub Stats</text>
+
+    <!-- Stats area (numbers) -->
+    <text class="label" x="0" y="306">Repos:</text>
+    <text id="repo_data" class="value" x="140" y="306">0</text>
+    <text id="repo_data_dots" class="small" x="200" y="306"> </text>
+
+    <text class="label" x="0" y="326">Commits:</text>
+    <text id="commit_data" class="value" x="140" y="326">0</text>
+    <text id="commit_data_dots" class="small" x="200" y="326"> </text>
+
+    <text class="label" x="0" y="346">Stars:</text>
+    <text id="star_data" class="value" x="140" y="346">0</text>
+    <text id="star_data_dots" class="small" x="200" y="346"> </text>
+
+    <text class="label" x="0" y="366">Followers:</text>
+    <text id="follower_data" class="value" x="140" y="366">0</text>
+
+    <!-- LOC block -->
+    <text class="label" x="340" y="306">Lines of Code:</text>
+    <text id="loc_data" class="value" x="460" y="306">0</text>
+    <text id="loc_add" class="small" x="460" y="326">+0</text>
+    <text id="loc_del" class="small" x="460" y="342">-0</text>
+  </g>
+</svg>
