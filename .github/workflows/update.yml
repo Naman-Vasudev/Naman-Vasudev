@@ -1,39 +1,39 @@
-name: Update Profile Cards
+name: Update GitHub Stats
 
 on:
   schedule:
-    - cron: '0 6 * * *'       # daily at 06:00 UTC (adjust if wanted)
-  workflow_dispatch:
+    - cron: "0 0 * * *"   # runs every day at midnight UTC
+  workflow_dispatch:       # allows manual trigger
 
 jobs:
-  update-cards:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout repo
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.12"
 
-      - name: Install dependencies
-        run: python -m pip install --upgrade pip && pip install python-dateutil requests lxml
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests python-dateutil lxml
 
-      - name: Run generator
+      - name: Run Stats Script
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           USER_NAME: ${{ secrets.USER_NAME }}
         run: python main.py
 
-      - name: Commit changes
+      - name: Commit and Push Changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add light_mode.svg dark_mode.svg || true
-          if ! git diff --staged --quiet; then
-            git commit -m "chore: update profile cards (automated)"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+          git add .
+          git commit -m "Updated stats"
+          git push
