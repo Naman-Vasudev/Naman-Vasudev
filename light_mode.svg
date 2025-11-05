@@ -1,75 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1100" height="420" viewBox="0 0 1100 420" xmlns="http://www.w3.org/2000/svg">
+<svg width="1100" height="480" viewBox="0 0 1100 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <style>
-    .mono { font-family: "Courier New", monospace; font-size: 10px; fill: #111827; }
-    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #374151; }
-    .value { font-family: Arial, sans-serif; font-size: 12px; fill: #111827; font-weight: 700; }
-    .accent { fill: #FF007F; font-weight:700; }
-    .small { font-size: 11px; fill: #6B7280; }
-    rect { fill: #ffffff; stroke: #E5E7EB; stroke-width: 1; rx: 10; }
+    .mono { font-family: "Courier New", monospace; font-size: 11px; fill: #0f172a; white-space: pre; }
+    .label { font-family: Inter, Arial, sans-serif; font-size: 12px; fill: #374151; }
+    .value { font-family: Inter, Arial, sans-serif; font-size: 13px; fill: #0f172a; font-weight: 700; }
+    .small { font-family: Inter, Arial, sans-serif; font-size: 11px; fill: #6B7280; }
+    rect { fill: #ffffff; stroke: #E5E7EB; stroke-width: 1; rx: 12; }
   </style>
-  <rect x="6" y="6" width="1088" height="408" rx="12"/>
-  <!-- ASCII art area (left) -->
-  <g transform="translate(18,18)">
-    <text id="ascii_art" class="mono" xml:space="preserve" x="0" y="0">
-      <!-- ascii content replaced by script -->
-    </text>
+
+  <rect x="6" y="6" width="1088" height="468" rx="12"/>
+
+  <!-- LEFT: ASCII area (use foreign <g> and tspans inserted by script) -->
+  <g id="ascii_group" transform="translate(20,22)">
+    <!-- script will create <text> with tspans here -->
   </g>
 
-  <!-- Right column text block -->
-  <g transform="translate(520,20)">
-    <text class="label" x="0" y="16">-</text>
-    <text class="label" x="0" y="36">OS:</text>
-    <text id="os_line" class="value" x="140" y="36">Windows 11</text>
+  <!-- RIGHT column block moved right and spaced out -->
+  <g transform="translate(520,28)">
+    <text class="label" x="0" y="16">—</text>
 
-    <text class="label" x="0" y="56">IDE:</text>
-    <text id="ide_line" class="value" x="140" y="56">VSCode</text>
+    <text class="label" x="0" y="48">OS:</text>
+    <text id="os_line" class="value" x="140" y="48">Windows 11</text>
 
-    <text class="label" x="0" y="76">Languages.Programming:</text>
-    <text id="prog_langs" class="small" x="200" y="76">Python, C++, TypeScript</text>
+    <text class="label" x="0" y="72">IDE:</text>
+    <text id="ide_line" class="value" x="140" y="72">VSCode</text>
 
-    <text class="label" x="0" y="96">Languages.Computer:</text>
-    <text id="comp_langs" class="small" x="200" y="96">HTML, CSS, JavaScript</text>
+    <text class="label" x="0" y="100">Prog. Languages:</text>
+    <text id="prog_langs" class="small" x="140" y="100">Python, C++, TypeScript</text>
 
-    <text class="label" x="0" y="116">Languages.Real:</text>
-    <text id="real_langs" class="small" x="200" y="116">English, Hindi, Punjabi</text>
+    <text class="label" x="0" y="124">Comp. Languages:</text>
+    <text id="comp_langs" class="small" x="140" y="124">HTML, CSS, JavaScript</text>
 
-    <text class="label" x="0" y="146">Hobbies.Software:</text>
-    <text id="hobby_software" class="small" x="200" y="146">Software, Mathematics, AI</text>
+    <text class="label" x="0" y="148">Spoken:</text>
+    <text id="real_langs" class="small" x="140" y="148">English, Hindi, Punjabi</text>
 
-    <text class="label" x="0" y="166">Hobbies.Hardware:</text>
-    <text id="hobby_hardware" class="small" x="200" y="166">Astronomy</text>
+    <text class="label" x="0" y="178">Hobbies:</text>
+    <text id="hobby_software" class="small" x="140" y="178">Software · Mathematics · AI</text>
 
-    <text class="label" x="0" y="196">Contact:</text>
-    <text class="label" x="0" y="216">Email.Personal:</text>
-    <text id="email_personal" class="small" x="140" y="216">naman24vasudev@gmail.com</text>
-    <text class="label" x="0" y="236">LinkedIn:</text>
-    <text id="linkedin" class="small" x="140" y="236">https://linkedin.com/...</text>
-    <text class="label" x="0" y="256">Instagram:</text>
-    <text id="instagram" class="small" x="140" y="256">naman_s_land</text>
+    <text class="label" x="0" y="198">Other:</text>
+    <text id="hobby_hardware" class="small" x="140" y="198">Astronomy</text>
 
-    <text class="label" x="0" y="286">- GitHub Stats</text>
+    <text class="label" x="0" y="232">Contact:</text>
+    <text class="label" x="0" y="252">Email:</text>
+    <text id="email_personal" class="small" x="140" y="252">naman24vasudev@gmail.com</text>
 
-    <!-- Stats area (numbers) -->
-    <text class="label" x="0" y="306">Repos:</text>
-    <text id="repo_data" class="value" x="140" y="306">0</text>
-    <text id="repo_data_dots" class="small" x="200" y="306"> </text>
+    <text class="label" x="0" y="276">LinkedIn:</text>
+    <text id="linkedin" class="small" x="140" y="276">https://linkedin.com/…</text>
 
-    <text class="label" x="0" y="326">Commits:</text>
-    <text id="commit_data" class="value" x="140" y="326">0</text>
-    <text id="commit_data_dots" class="small" x="200" y="326"> </text>
+    <text class="label" x="0" y="300">Instagram:</text>
+    <text id="instagram" class="small" x="140" y="300">naman_s_land</text>
 
-    <text class="label" x="0" y="346">Stars:</text>
-    <text id="star_data" class="value" x="140" y="346">0</text>
-    <text id="star_data_dots" class="small" x="200" y="346"> </text>
+    <!-- Stats -->
+    <text class="label" x="0" y="340">Repos:</text>
+    <text id="repo_data" class="value" x="140" y="340">0</text>
 
-    <text class="label" x="0" y="366">Followers:</text>
-    <text id="follower_data" class="value" x="140" y="366">0</text>
+    <text class="label" x="0" y="364">Commits:</text>
+    <text id="commit_data" class="value" x="140" y="364">0</text>
 
-    <!-- LOC block -->
-    <text class="label" x="340" y="306">Lines of Code:</text>
-    <text id="loc_data" class="value" x="460" y="306">0</text>
-    <text id="loc_add" class="small" x="460" y="326">+0</text>
-    <text id="loc_del" class="small" x="460" y="342">-0</text>
+    <text class="label" x="0" y="388">Stars:</text>
+    <text id="star_data" class="value" x="140" y="388">0</text>
+
+    <text class="label" x="0" y="412">Followers:</text>
+    <text id="follower_data" class="value" x="140" y="412">0</text>
+
+    <!-- LOC block on the far right -->
+    <text class="label" x="360" y="340">Lines of Code:</text>
+    <text id="loc_data" class="value" x="520" y="340">0</text>
+    <text id="loc_add" class="small" x="520" y="360">+0</text>
+    <text id="loc_del" class="small" x="520" y="376">-0</text>
   </g>
 </svg>
