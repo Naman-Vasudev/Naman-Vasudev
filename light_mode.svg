@@ -69,7 +69,7 @@ text, tspan {white-space: pre;}
 <text x="600" y="30" fill="#24292f">
 <tspan x="600" y="30">Naman-Vasudev</tspan> -————————————————————————————————————
 <tspan x="600" y="50" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ..................... </tspan><tspan class="value">Windows 11</tspan>
-<tspan x="600" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots">. </tspan><tspan class="value" id="age_data">19 years, 5 months, 2 days</tspan>
+<tspan x="600" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots">. </tspan><tspan class="value" id="age_data">19 years, 5 months, 3 days</tspan>
 <tspan x="600" y="90" class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ..... </tspan><tspan class="value">Punjab Engineering College, Chandigarh</tspan>
 <tspan x="600" y="110" class="cc">. </tspan><tspan class="key">Kernel</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">CS+Math Undergrad</tspan>
 <tspan x="600" y="130" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">Visual Studio Code</tspan>
